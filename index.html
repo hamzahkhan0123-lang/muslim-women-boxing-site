@@ -1,321 +1,119 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Religious Beliefs and Inclusivity in Sports</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Religious Beliefs and Inclusivity in Sports</title>
+<!-- Modern, accessible color palette and typography --><link <header="" href="" skip-link"=""/>
+<nav aria-label="Primary" class="nav">
+<div class="brand">
+<span aria-hidden="true" class="dot"></span>
+</div>
+<div>
+<a a="" hrefs.htmlcostings<="">
+<a a="" href="implementations.htm" tions<="">
+</a></a></div>
+</nav>
 
-  <!-- Modern, accessible color palette and typography -->
-  https://fonts.googleapis.com
-  https://fonts.gstatic.com
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;swap
-
-  <style>
-    :root {
-      /* Color system inspired by modern, accessible contrasts */
-      --bg: #0b132b;
-      --panel: #1c2541;
-      --muted: #3a506b;
-      --accent: #5bc0be;
-      --accent-2: #9ee6e4;
-      --text: #e6f1ff;
-      --text-muted: #c7d3e0;
-      --focus: #ffd166;
-      --white: #ffffff;
-      --shadow: 0 10px 30px rgba(0,0,0,0.25);
-      --radius: 14px;
-      --radius-sm: 10px;
-      --radius-xs: 8px;
-      --maxw: 1100px;
-    }
-
-    * { box-sizing: border-box; }
-    html, body {
-      margin: 0;
-      padding: 0;
-      background: radial-gradient(1200px 600px at 20% -10%, #14213d 0%, #0b132b 60%);
-      color: var(--text);
-      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      line-height: 1.6;
-    }
-
-    a { color: var(--accent-2); text-decoration: none; }
-    a:hover { color: var(--white); }
-
-    /* Skip link for accessibility */
-    .skip-link {
-      position: absolute; left: -9999px; top: auto;
-      width: 1px; height: 1px; overflow: hidden;
-    }
-    .skip-link:focus {
-      position: fixed; left: 1rem; top: 1rem;
-      width: auto; height: auto; padding: .6rem 1rem;
-      background: var(--focus); color: #000; border-radius: var(--radius-xs);
-      z-index: 1000; box-shadow: var(--shadow);
-    }
-
-    /* Top nav */
-    header {
-      position: sticky; top: 0; z-index: 50;
-      backdrop-filter: blur(8px);
-      background: rgba(12, 18, 43, 0.55);
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-    }
-    .nav {
-      margin: 0 auto; max-width: var(--maxw);
-      display: flex; align-items: center; justify-content: space-between;
-      padding: .9rem 1.25rem;
-    }
-    .brand {
-      display: flex; align-items: center; gap: .6rem;
-      font-weight: 800; letter-spacing: .3px;
-    }
-    .brand .dot {
-      width: 10px; height: 10px; border-radius: 50%;
-      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
-      box-shadow: 0 0 0 3px rgba(91, 192, 190, 0.25);
-    }
-    .nav a {
-      font-weight: 600; padding: .45rem .7rem; border-radius: 8px;
-      transition: background .2s ease, color .2s ease;
-    }
-    .nav a:hover { background: rgba(255,255,255,0.08); }
-    .nav .cta {
-      background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
-      color: #062b2a; padding: .5rem .9rem; border-radius: 10px;
-      box-shadow: 0 6px 18px rgba(91,192,190,0.35);
-    }
-    .nav .cta:hover { filter: brightness(1.05); }
-
-    /* Hero */
-    .hero {
-      margin: 1.5rem auto 2rem; max-width: var(--maxw);
-      padding: 1.25rem;
-    }
-    .hero-grid {
-      display: grid; gap: 1.25rem;
-      grid-template-columns: 1.2fr 1fr;
-      align-items: center;
-    }
-    @media (max-width: 900px) {
-      .hero-grid { grid-template-columns: 1fr; }
-    }
-    .hero-card {
-      background: linear-gradient(180deg, rgba(32,46,80,0.7) 0%, rgba(28,37,65,0.9) 100%);
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: var(--radius);
-      padding: 1.4rem;
-      box-shadow: var(--shadow);
-    }
-    .eyebrow {
-      display: inline-flex; align-items: center; gap: .5rem;
-      font-size: .85rem; color: var(--text-muted);
-      background: rgba(155, 233, 231, 0.08);
-      border: 1px solid rgba(155, 233, 231, 0.18);
-      padding: .3rem .6rem; border-radius: 999px;
-    }
-    h1 {
-      margin: .6rem 0 0.4rem;
-      font-size: clamp(1.6rem, 2.6vw + 1rem, 2.4rem);
-      line-height: 1.15;
-      letter-spacing: .2px;
-    }
-    .lead {
-      color: var(--text-muted); font-size: 1.05rem;
-      margin: .2rem 0 1rem;
-    }
-    .hero-media {
-      position: relative; border-radius: var(--radius);
-      overflow: hidden; border: 1px solid rgba(255,255,255,0.08);
-      box-shadow: var(--shadow);
-    }
-    .hero-media img {
-      width: 100%; height: 100%; display: block; object-fit: cover;
-      aspect-ratio: 16 / 10;
-      filter: saturate(1.05) contrast(1.03);
-    }
-    .media-badge {
-      position: absolute; bottom: .8rem; left: .8rem;
-      background: rgba(0,0,0,0.45); color: #fff; padding: .35rem .6rem;
-      border-radius: 999px; backdrop-filter: blur(4px); font-size: .85rem;
-      border: 1px solid rgba(255,255,255,0.15);
-    }
-
-    /* Content sections */
-    main {
-      margin: 0 auto; max-width: var(--maxw);
-      padding: 0 1.25rem 3rem;
-    }
-    section {
-      background: linear-gradient(180deg, rgba(32,46,80,0.6) 0%, rgba(28,37,65,0.9) 100%);
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: var(--radius);
-      padding: 1.25rem;
-      margin-bottom: 1.25rem;
-      box-shadow: var(--shadow);
-    }
-    h2 {
-      font-size: clamp(1.2rem, 1.2vw + 1rem, 1.5rem);
-      margin: 0 0 .4rem;
-      color: var(--accent-2);
-      letter-spacing: .2px;
-    }
-    ul { margin: .4rem 0 0; padding-left: 1.1rem; }
-    li { margin: .2rem 0; }
-
-    /* Grid helpers */
-    .grid {
-      display: grid; gap: 1rem;
-    }
-    .grid-2 {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-    @media (max-width: 800px) {
-      .grid-2 { grid-template-columns: 1fr; }
-    }
-
-    /* Footer */
-    footer {
-      margin: 0 auto; max-width: var(--maxw);
-      padding: 1.5rem 1.25rem 3rem; color: var(--text-muted);
-    }
-    .note {
-      font-size: .9rem; opacity: .9;
-    }
-
-    /* Focus styles */
-    :focus-visible {
-      outline: 3px solid var(--focus);
-      outline-offset: 2px;
-      border-radius: 6px;
-    }
-  </style>
-</head>
-<body>
-  <a class="skip-link" href
-  <header>
-    <nav class="nav" aria-label="Primary">
-      <div class="brand">
-        <span class="dot" aria-hidden="true"></span>
-        index.htmlReligious Beliefs &amp; Inclusivity in Sports</a>
-      </div>
-      <div>
-        index.htmlHome</a>
-        <a hrefs.htmlCostings</a>
-        <a href="implementations.htm"tions</a>
-      </div>
-    </nav>
-  </header>
-
-  <div class="hero">
-    <div class="hero-grid">
-      <div class="hero-card">
-        <span class="eyebrow">Project focus • Inclusivity</span>
-        <h1>How religious beliefs affect sport participation — and how to make sport more inclusive</h1>
-        <p class="lead">
+<div class="hero">
+<div class="hero-grid">
+<div class="hero-card">
+<span class="eyebrow">Project focus • Inclusivity</span>
+<h1>How religious beliefs affect sport participation — and how to make sport more inclusive</h1>
+<p class="lead">
           Exploring how beliefs—particularly within Islam—shape participation in sport.
           Identifying barriers and showcasing strategies that respect faith, modesty,
           and community while increasing access and agency.
         </p>
-        <div class="grid grid-2" role="group" aria-label="Quick links">
-          implementations.htmView Implementations →</a>
-          costings.htmlSee Costings →</a>
-        </div>
-      </div>
-
-      <figure class="hero-media">
-        <!-- Using the exact filename you mentioned -->
-        <img src="imagesboxing-group.jpg" alt="A group of Muslim women training in a boxing class, demonstrating inclusive sporting practice."  </div>
-
-  <main id="main">
-    <section aria-labelledby="intro">
-      <h2 id="intro">Introduction &amp; Aims</h2>
-      <p>
+<div aria-label="Quick links" class="grid grid-2" role="group">
+          implementations.htmView Implementations →
+          costings.htmlSee Costings →
+</div>
+</div>
+<figure class="hero-media">
+<!-- Using the exact filename you mentioned -->
+<img <="" alt="A group of Muslim women training in a boxing class, demonstrating inclusive sporting practice." div="" src="imagesboxing-group.jpg"/>
+<main id="main">
+<section aria-labelledby="intro">
+<h2 id="intro">Introduction &amp; Aims</h2>
+<p>
         This project explores how religious beliefs, particularly within Islam, influence participation in sports.
         It aims to identify barriers and propose inclusive strategies that respect religious values while promoting
         active engagement.
       </p>
-    </section>
-
-    <section aria-labelledby="context">
-      <h2 id="context">Context</h2>
-      <ul>
-        <li>Modesty requirements (e.g., hijab, long sleeves)</li>
-        <li>Gender segregation in physical activities</li>
-        <li>Lack of representation (few Muslim female coaches)</li>
-        <li><strong>Example:</strong> <em>Muslim Women Boxing Initiative</em> – empowering Muslim women through culturally sensitive boxing programs</li>
-      </ul>
-    </section>
-
-    <section aria-labelledby="critical">
-      <h2 id="critical">Critical Theory and Sport</h2>
-      <p>
+</section>
+<section aria-labelledby="context">
+<h2 id="context">Context</h2>
+<ul>
+<li>Modesty requirements (e.g., hijab, long sleeves)</li>
+<li>Gender segregation in physical activities</li>
+<li>Lack of representation (few Muslim female coaches)</li>
+<li><strong>Example:</strong> <em>Muslim Women Boxing Initiative</em> – empowering Muslim women through culturally sensitive boxing programs</li>
+</ul>
+</section>
+<section aria-labelledby="critical">
+<h2 id="critical">Critical Theory and Sport</h2>
+<p>
         Critical theory helps examine power structures and cultural norms in sport. It promotes
         <strong>agency</strong>—the ability to act independently and make choices—especially for marginalized groups.
       </p>
-      <ul>
-        <li>Challenges dominant ideologies</li>
-        <li>Focuses on empowerment and cultural transformation</li>
-        <li>More agency-oriented than functionalism or conflict theory</li>
-      </ul>
-    </section>
-
-    <section aria-labelledby="agency">
-      <h2 id="agency">Agency</h2>
-      <p>Agency refers to the capacity of individuals to act independently. In sport, it means:</p>
-      <ul>
-        <li>Muslim women choosing to participate despite societal pressures</li>
-        <li>Creating inclusive spaces and programs</li>
-        <li>Having Muslim female coaches who advocate for their communities</li>
-      </ul>
-    </section>
-
-    <section aria-labelledby="tenets">
-      <h2 id="tenets">Major Tenets of Critical Theory in Sport</h2>
-      <ul>
-        <li>Power and inequality in sport</li>
-        <li>Cultural hegemony and marginalization</li>
-        <li>Resistance and social change</li>
-        <li>Sport as a space for identity and interaction</li>
-      </ul>
-    </section>
-
-    <section aria-labelledby="beyond">
-      <h2 id="beyond">Beyond Exploitation</h2>
-      <p>
+<ul>
+<li>Challenges dominant ideologies</li>
+<li>Focuses on empowerment and cultural transformation</li>
+<li>More agency-oriented than functionalism or conflict theory</li>
+</ul>
+</section>
+<section aria-labelledby="agency">
+<h2 id="agency">Agency</h2>
+<p>Agency refers to the capacity of individuals to act independently. In sport, it means:</p>
+<ul>
+<li>Muslim women choosing to participate despite societal pressures</li>
+<li>Creating inclusive spaces and programs</li>
+<li>Having Muslim female coaches who advocate for their communities</li>
+</ul>
+</section>
+<section aria-labelledby="tenets">
+<h2 id="tenets">Major Tenets of Critical Theory in Sport</h2>
+<ul>
+<li>Power and inequality in sport</li>
+<li>Cultural hegemony and marginalization</li>
+<li>Resistance and social change</li>
+<li>Sport as a space for identity and interaction</li>
+</ul>
+</section>
+<section aria-labelledby="beyond">
+<h2 id="beyond">Beyond Exploitation</h2>
+<p>
         Critical theory moves beyond seeing athletes as exploited labor. It views sport as a site for resistance,
         expression, and transformation.
       </p>
-    </section>
-
-    <section aria-labelledby="culture">
-      <h2 id="culture">Shaped by Interactions / Shaping Wider Culture</h2>
-      <p>
+</section>
+<section aria-labelledby="culture">
+<h2 id="culture">Shaped by Interactions / Shaping Wider Culture</h2>
+<p>
         Sport is both influenced by and influences culture. Inclusive practices can reshape societal views on
         Muslim women in sport.
       </p>
-    </section>
-
-    <section aria-labelledby="change">
-      <h2 id="change">Potential for Change</h2>
-      <ul>
-        <li>Policy reforms (e.g., allowing religious attire)</li>
-        <li>Community initiatives (e.g., boxing programs)</li>
-        <li>Representation and leadership (e.g., Muslim female coaches)</li>
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    <p class="note">
+</section>
+<section aria-labelledby="change">
+<h2 id="change">Potential for Change</h2>
+<ul>
+<li>Policy reforms (e.g., allowing religious attire)</li>
+<li>Community initiatives (e.g., boxing programs)</li>
+<li>Representation and leadership (e.g., Muslim female coaches)</li>
+</ul>
+</section>
+</main>
+<footer>
+<p class="note">
       © <span id="year"></span> Inclusivity in Sport • Built by Hamzah Khan
-      • implementations.htmImplementations</a> • costings.htmlCostings</a>
-    </p>
-  </footer>
-
-  <script>
+      • implementations.htmImplementations • costings.htmlCostings
+</p>
+</footer>
+<script>
     // Set current year
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
-</body>
-</html>
+
+</figure></div></div></head></html><body><div><a href="costings.html" style="display:inline-block; padding:10px; margin:5px; background-color:#007BFF; color:white; text-decoration:none; border-radius:5px;">Costings</a><a href="implementations.htm" style="display:inline-block; padding:10px; margin:5px; background-color:#28A745; color:white; text-decoration:none; border-radius:5px;">Implementation</a></div></body>
