@@ -5,14 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Religious Beliefs and Inclusivity in Sports</title>
 
-  <!-- Modern, accessible color palette and typography -->
+  <!-- Performance: preconnect to Google Fonts origins -->
   https://fonts.googleapis.com
   https://fonts.gstatic.com
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;swap
+
+  <!-- Inter font -->
+  https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap
 
   <style>
     :root {
-      /* Color system inspired by modern, accessible contrasts */
       --bg: #0b132b;
       --panel: #1c2541;
       --muted: #3a506b;
@@ -24,8 +25,6 @@
       --white: #ffffff;
       --shadow: 0 10px 30px rgba(0,0,0,0.25);
       --radius: 14px;
-      --radius-sm: 10px;
-      --radius-xs: 8px;
       --maxw: 1100px;
     }
 
@@ -42,7 +41,7 @@
     a { color: var(--accent-2); text-decoration: none; }
     a:hover { color: var(--white); }
 
-    /* Skip link for accessibility */
+    /* Skip link */
     .skip-link {
       position: absolute; left: -9999px; top: auto;
       width: 1px; height: 1px; overflow: hidden;
@@ -50,11 +49,11 @@
     .skip-link:focus {
       position: fixed; left: 1rem; top: 1rem;
       width: auto; height: auto; padding: .6rem 1rem;
-      background: var(--focus); color: #000; border-radius: var(--radius-xs);
+      background: var(--focus); color: #000; border-radius: 8px;
       z-index: 1000; box-shadow: var(--shadow);
     }
 
-    /* Top nav */
+    /* Header / Nav */
     header {
       position: sticky; top: 0; z-index: 50;
       backdrop-filter: blur(8px);
@@ -67,25 +66,28 @@
       padding: .9rem 1.25rem;
     }
     .brand {
-      display: flex; align-items: center; gap: .6rem;
+      display: inline-flex; align-items: center; gap: .6rem;
       font-weight: 800; letter-spacing: .3px;
     }
-    .brand .dot {
+    .dot {
       width: 10px; height: 10px; border-radius: 50%;
       background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
       box-shadow: 0 0 0 3px rgba(91, 192, 190, 0.25);
+      flex: 0 0 10px;
     }
-    .nav a {
+    .nav-links a {
       font-weight: 600; padding: .45rem .7rem; border-radius: 8px;
       transition: background .2s ease, color .2s ease;
+      margin-left: .3rem;
     }
-    .nav a:hover { background: rgba(255,255,255,0.08); }
-    .nav .cta {
+    .nav-links a:hover { background: rgba(255,255,255,0.08); }
+    .nav-links .cta {
       background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
       color: #062b2a; padding: .5rem .9rem; border-radius: 10px;
       box-shadow: 0 6px 18px rgba(91,192,190,0.35);
+      margin-left: .5rem;
     }
-    .nav .cta:hover { filter: brightness(1.05); }
+    .nav-links .cta:hover { filter: brightness(1.05); }
 
     /* Hero */
     .hero {
@@ -122,7 +124,7 @@
     }
     .lead {
       color: var(--text-muted); font-size: 1.05rem;
-      margin: .2rem 0 1rem;
+      margin: .2rem 0 0;
     }
     .hero-media {
       position: relative; border-radius: var(--radius);
@@ -141,7 +143,7 @@
       border: 1px solid rgba(255,255,255,0.15);
     }
 
-    /* Content sections */
+    /* Content */
     main {
       margin: 0 auto; max-width: var(--maxw);
       padding: 0 1.25rem 3rem;
@@ -163,25 +165,12 @@
     ul { margin: .4rem 0 0; padding-left: 1.1rem; }
     li { margin: .2rem 0; }
 
-    /* Grid helpers */
-    .grid {
-      display: grid; gap: 1rem;
-    }
-    .grid-2 {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-    @media (max-width: 800px) {
-      .grid-2 { grid-template-columns: 1fr; }
-    }
-
     /* Footer */
     footer {
       margin: 0 auto; max-width: var(--maxw);
       padding: 1.5rem 1.25rem 3rem; color: var(--text-muted);
     }
-    .note {
-      font-size: .9rem; opacity: .9;
-    }
+    .note { font-size: .9rem; opacity: .9; }
 
     /* Focus styles */
     :focus-visible {
@@ -192,17 +181,21 @@
   </style>
 </head>
 <body>
-  <a class="skip-link" href
+  #mainSkip to content</a>
+
   <header>
     <nav class="nav" aria-label="Primary">
-      <div class="brand">
+      <!-- Brand/title links to index.html -->
+      index.html
         <span class="dot" aria-hidden="true"></span>
-        index.htmlReligious Beliefs &amp; Inclusivity in Sports</a>
-      </div>
-      <div>
+        <span>Religious Beliefs &amp; Inclusivity in Sports</span>
+      </a>
+
+      <!-- Nav links (Home, Costings, Implementations) -->
+      <div class="nav-links" role="menubar" aria-label="Main menu">
         index.htmlHome</a>
-        <a hrefs.htmlCostings</a>
-        <a href="implementations.htm"tions</a>
+        costings.htmlCostings</a>
+        implementations.htmImplementations</a>
       </div>
     </nav>
   </header>
@@ -217,15 +210,15 @@
           Identifying barriers and showcasing strategies that respect faith, modesty,
           and community while increasing access and agency.
         </p>
-        <div class="grid grid-2" role="group" aria-label="Quick links">
-          implementations.htmView Implementations →</a>
-          costings.htmlSee Costings →</a>
-        </div>
+        <!-- No hero quick-links -->
       </div>
 
       <figure class="hero-media">
-        <!-- Using the exact filename you mentioned -->
-        <img src="imagesboxing-group.jpg" alt="A group of Muslim women training in a boxing class, demonstrating inclusive sporting practice."  </div>
+        imagesboxing-group.jpg
+        <figcaption class="media-badge">Muslim Women Boxing Initiative</figcaption>
+      </figure>
+    </div>
+  </div>
 
   <main id="main">
     <section aria-labelledby="intro">
