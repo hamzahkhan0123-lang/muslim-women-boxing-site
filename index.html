@@ -1,37 +1,170 @@
 
-<!-- Navigation -->
-<nav aria-label="Primary" class="nav">
-  <div class="brand">
-    <span aria-hidden="true" class="dot">●</span> Inclusivity in Sport
-  </div>
-  <div>
-    implementations.htmlImplementations</a>
-    costings.htmlCostings</a>
-    Inclusion_and_Policy.htmlPolicy Context</a>
-    <a href="Logic_Model_Table.html">Logic Model</a>
-ing_Evaluation_Framework.htmlMonitoring & Evaluation</a>
-  </div>
-</nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Religious Beliefs and Inclusivity in Sports</title>
+  styles.css
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      line-height: 1.6;
+    }
 
-<!-- Hero Section -->
-<section class="hero">
-  <div class="hero-card">
-    <span class="eyebrow">Project focus • Inclusivity</span>
-    <h1>How religious beliefs affect sport participation — and how to make sport more inclusive</h1>
-    <p class="lead">
-      Exploring how beliefs—particularly within Islam—shape participation in sport.
-      Identifying barriers and showcasing strategies that respect faith, modesty,
-      and community while increasing access and agency.
-    </p>
-    <div aria-label="Quick links" class="grid grid-2" role="group">
-      implementations.htmlView Implementations →</a>
-      costings.htmlSee Costings →</a>
-      <a href="Inclusion_and_Policy.html" style="background-color:#FF9800;">Policygic Model →</a>
-      Monitoring_Evaluation_Framework.htmlMonitoring & Evaluation →</a>
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #222;
+      color: white;
+    }
+
+    .nav a {
+      color: white;
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background-color: #f4f4f4;
+      padding: 2rem;
+    }
+
+    .hero-card {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .hero-card .eyebrow {
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      color: #555;
+    }
+
+    .lead {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .grid-2 {
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+
+    .grid-2 a {
+      display: inline-block;
+      padding: 10px;
+      text-align: center;
+      border-radius: 5px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    /* Button colours */
+    .grid-2 a:nth-child(1) { background-color: #28A745; } /* Green */
+    .grid-2 a:nth-child(2) { background-color: #007BFF; } /* Blue */
+    .grid-2 a:nth-child(3) { background-color: #FF9800; } /* Orange */
+    .grid-2 a:nth-child(4) { background-color: #6A1B9A; } /* Purple */
+    .grid-2 a:nth-child(5) { background-color: #009688; } /* Teal */
+
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #4FC3F7;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 2rem auto;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav aria-label="Primary" class="nav">
+    <div class="brand">
+      <span aria-hidden="true" class="dot">●</span> Inclusivity in Sport
     </div>
-  </div>
-  <figure class="hero-media">
-    images/boxing-group.jpg
-  </figure>
-</section>
+    <div>
+      implementations.htmlImplementations</a>
+      costings.htmlCostings</a>
+      <a href="Inclusion_and_PlPolicy Context</a>
+      Logic_Model_Table.htmlLogic Model</a>
+      Monitoring_Evaluation_Framework.htmlMonitoring & Evaluation</a>
+    </div>
+  </nav>
 
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-card">
+      <span class="eyebrow">Project focus • Inclusivity</span>
+      <h1>How religious beliefs affect sport participation — and how to make sport more inclusive</h1>
+      <p class="lead">
+        Exploring how beliefs—particularly within Islam—shape participation in sport.
+        Identifying barriers and showcasing strategies that respect faith, modesty,
+        and community while increasing access and agency.
+      </p>
+      <div aria-label="Quick links" class="grid grid-2" role="group">
+        <a href="implementations Implementations →</a>
+        costings.htmlSee Costings →</a>
+        Inclusion_and_Policy.htmlPolicy Context →</a>
+        <a href="Logic_Model_Table.html">Logic>
+        Monitoring_Evaluation_Framework.htmlMonitoring & Evaluation →</a>
+      </div>
+    </div>
+    <figure class="hero-media">
+      <img src="images/boxing-group.jpg" alt="A group of Muslim women training in a boxing class, demonstratingour existing sections remain unchanged -->
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p class="note">
+      © <span id="year"></span> Inclusivity in Sport • Built by Hamzah Khan
+      • implementations.htmlImplementations</a>
+      • costings.htmlCostings</a>
+      • Inclusion_and_Policy.htmlPolicy Context</a>
+      • Logic_Model_Table.htmlLogic Model</a>
+      • Monitoring_Evaluation_Framework.htmlMonitoring & Evaluation</a>
+    </p>
+  </footer>
+
+  <script>
+    // Dynamically set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
