@@ -1,0 +1,40 @@
+
+<section>
+    <h2>Monitoring & Evaluation Framework</h2>
+    <table border="1" cellpadding="8" style="border-collapse: collapse; width: 100%; background-color: #f9f9f9;">
+        <thead style="background-color: #005f73; color: #fff;">
+            <tr>
+                <th>Indicator</th>
+                <th>Method</th>
+                <th>Frequency</th>
+                <th>Feedback Loop</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Attendance numbers</td>
+                <td>Session registers</td>
+                <td>Weekly</td>
+                <td>Adjust session times and venues</td>
+            </tr>
+            <tr>
+                <td>Participant satisfaction</td>
+                <td>Anonymous surveys</td>
+                <td>Quarterly</td>
+                <td>Modify coaching approach</td>
+            </tr>
+            <tr>
+                <td>Retention rate</td>
+                <td>Compare enrolment vs. ongoing participation</td>
+                <td>Every 6 months</td>
+                <td>Inform expansion decisions</td>
+            </tr>
+            <tr>
+                <td>Health and wellbeing outcomes</td>
+                <td>Self-reported physical activity and confidence</td>
+                <td>Baseline + 6 months</td>
+                <td>Report to funders and stakeholders</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
