@@ -1,0 +1,24 @@
+
+<section>
+    <h2>Logic Model for Inclusive Boxing Program</h2>
+    <table border="1" cellpadding="8" style="border-collapse: collapse; width: 100%; background-color: #f9f9f9;">
+        <thead style="background-color: #005f73; color: #fff;">
+            <tr>
+                <th>Inputs</th>
+                <th>Activities</th>
+                <th>Outputs</th>
+                <th>Short-Term Outcomes</th>
+                <th>Long-Term Impact</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Funding (£12,000), venue, culturally sensitive coaches, boxing equipment</td>
+                <td>Community engagement, coach training, inclusive boxing sessions</td>
+                <td>2 trained coaches, 3 weekly sessions, 30 participants enrolled</td>
+                <td>Increased confidence, improved physical activity levels, positive attitudes toward sport</td>
+                <td>Sustained participation among Muslim women, greater representation in local sport, improved health and social inclusion</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
