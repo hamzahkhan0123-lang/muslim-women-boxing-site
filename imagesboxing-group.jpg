@@ -1,5 +1,14 @@
-<img 
-  src="images/boxing-group.jpg" 
-  alt="Four athletes wearing sports attire and boxing gloves, standing together in a training environment."
-  onerror="this.onerror=null; this.src='https://via.placeholder.com/800x400?text=Image+Not+Found';"
-/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxing Team</title>
+</head>
+<body>
+    <h1>Boxing Team</h1>
+
+    <!-- Place the image file in your repo, e.g., /images/boxing-group.jpg -->
+    <img src="images/boxing-group.jpg" alt="Group of women boxers wearing hijabs and boxing gloves" width="100%">
+</body>
+</html>
