@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +5,6 @@
     <title>Project Costings</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        /* Base styles */
         body {
             font-family: Arial, sans-serif;
             margin: 40px;
@@ -14,17 +12,8 @@
             color: #333;
             line-height: 1.6;
         }
-
-        /* Headings */
-        h1 {
-            color: #005f73;
-            margin-bottom: 10px;
-        }
-        h2, h3 {
-            color: #0a9396;
-        }
-
-        /* Navigation */
+        h1 { color: #005f73; margin-bottom: 10px; }
+        h2, h3 { color: #0a9396; }
         nav {
             background-color: #e0f7fa;
             padding: 10px 12px;
@@ -45,8 +34,6 @@
             background: #b2ebf2;
             outline: none;
         }
-
-        /* Table */
         table {
             width: 100%;
             border-collapse: collapse;
@@ -64,19 +51,9 @@
             padding: 10px;
             text-align: left;
         }
-        th {
-            background-color: #e0f7fa;
-        }
-        tfoot th {
-            background-color: #d9f3f7;
-        }
-
-        /* Lists */
-        ul {
-            margin-top: 10px;
-        }
-
-        /* Image */
+        th { background-color: #e0f7fa; }
+        tfoot th { background-color: #d9f3f7; }
+        ul { margin-top: 10px; }
         img {
             display: block;
             margin: 20px auto;
@@ -84,8 +61,6 @@
             height: auto;
             border-radius: 8px;
         }
-
-        /* Info box */
         .note {
             background: #fff;
             border-left: 4px solid #0a9396;
@@ -97,19 +72,17 @@
     </style>
 </head>
 <body>
-    <!-- Navigation (adjust hrefs to match your actual file names) -->
     <nav aria-label="Primary">
-        <a href="lHome</a>
-        costings.htmlCostings</a>
-        implementations.htmlImplementations</a>
-        about.htmlAbout</a>
+        <a href="home.html">Home</a>
+        <a href="costings.html">Costings</a>
+        <a href="implementations.html">Implementations</a>
+        <a href="about.html">About</a>
     </nav>
 
     <h1>Costings for Muslim Women Boxing Initiative</h1>
     <p>This page outlines estimated costs, income sources, and outgoings for implementing a culturally sensitive boxing program.</p>
 
-    <!-- Optional hero image (replace src with your image path) -->
-    images/boxing-session.jpg
+    <img src="boxing-session.jpg" alt="Boxing session image">
 
     <table aria-describedby="costing-summary">
         <caption id="costing-summary">Estimated Outgoings (6-month pilot)</caption>
@@ -120,26 +93,11 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>Venue Hire (6 months)</td>
-                <td>3,000</td>
-            </tr>
-            <tr>
-                <td>Equipment (gloves, pads, mats)</td>
-                <td>1,500</td>
-            </tr>
-            <tr>
-                <td>Coach Salary (part-time)</td>
-                <td>6,000</td>
-            </tr>
-            <tr>
-                <td>Marketing &amp; Outreach</td>
-                <td>800</td>
-            </tr>
-            <tr>
-                <td>Administrative Costs</td>
-                <td>700</td>
-            </tr>
+            <tr><td>Venue Hire (6 months)</td><td>3,000</td></tr>
+            <tr><td>Equipment (gloves, pads, mats)</td><td>1,500</td></tr>
+            <tr><td>Coach Salary (part-time)</td><td>6,000</td></tr>
+            <tr><td>Marketing &amp; Outreach</td><td>800</td></tr>
+            <tr><td>Administrative Costs</td><td>700</td></tr>
         </tbody>
         <tfoot>
             <tr>
@@ -155,16 +113,19 @@
         <li>Community Donations: £2,000</li>
         <li>Participant Fees: £3,000</li>
         <li>Sponsorships: £2,000</li>
-        <li> 
-            <strong>Croed funding</strong>
-            <a href="https://www.crowdfunder.co.uk/sports" target="_blank">
-            )
+        <li>
+            <strong>Crowdfunding:</strong>
+            <a href="https://www.crowdfunder.co.uk/sports" target="_blank">Crowdfunder Sports</a>
         </li>
         <li>
             <strong>Sport England Small Grants Programme:</strong>
             £300–£15,000 (Applied)
-            <a href= "https://www.sportengland.org/funding-and-campaigns/our-funding/historic-funds/small-grants-programme">
+            <a href="https://www.sportengland.org/funding-and-campaigns/our-funding/historic-funds/small-grants-programme" target="_blank">More info</a>
         </li>
     </ul>
 
     <div class="note">
+        Note: All figures are estimates and subject to change depending on venue availability, equipment suppliers, and grant outcomes.
+    </div>
+</body>
+</html>
