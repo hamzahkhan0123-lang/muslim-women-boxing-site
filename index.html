@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
+  <meta charset="utf-8"/>jp
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Muslim Women Boxing Initiative – Inclusivity in Sport</title>
+  <title>Religious Beliefs and Inclusivity in Sports</title>
   <link rel="stylesheet" href="styles.css"/>
   <style>
     body {
@@ -12,6 +11,7 @@
       margin: 0;
       line-height: 1.6;
     }
+
     .nav {
       display: flex;
       justify-content: space-between;
@@ -20,36 +20,72 @@
       background-color: #222;
       color: white;
     }
+
     .nav a {
       color: white;
       margin-left: 1rem;
       text-decoration: none;
       font-weight: bold;
     }
-    .nav a:hover { text-decoration: underline; }
+
+    .nav a:hover {
+      text-decoration: underline;
+    }
+
     .hero {
       background-color: #f4f4f4;
       padding: 2rem;
     }
-    .hero-card { max-width: 800px; margin: auto; }
+
+    .hero-card {
+      max-width: 800px;
+      margin: auto;
+    }
+
     .hero-card .eyebrow {
       text-transform: uppercase;
       font-size: 0.8rem;
       color: #555;
     }
-    .lead { font-size: 1.2rem; margin-bottom: 1rem; }
-    main { padding: 2rem; max-width: 900px; margin: auto; }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 1rem 0;
+
+    .lead {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
     }
-    th, td {
-      border: 1px solid #ccc;
-      padding: 8px;
-      text-align: left;
+
+    .grid {
+      display: grid;
+      gap: 1rem;
     }
-    th { background-color: #eee; }
+
+    .grid-2 {
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+
+    .grid-2 a {
+      display: inline-block;
+      padding: 10px;
+      text-align: center;
+      border-radius: 5px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .grid-2 a:first-child {
+      background-color: #28A745;
+    }
+
+    .grid-2 a:last-child {
+      background-color: #007BFF;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
     footer {
       background-color: #222;
       color: white;
@@ -57,8 +93,16 @@
       padding: 1rem;
       font-size: 0.9rem;
     }
-    footer a { color: #4FC3F7; text-decoration: none; }
-    footer a:hover { text-decoration: underline; }
+
+    footer a {
+      color: #4FC3F7;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
     img {
       max-width: 100%;
       height: auto;
@@ -66,150 +110,158 @@
       margin: 2rem auto;
       border-radius: 10px;
     }
+
+    /* New section links */
+    .extra-links {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .extra-links a {
+      color: #007BFF;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .extra-links a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
 
-<!-- Navigation -->
-<nav aria-label="Primary" class="nav">
-  <div class="brand">
-    <span aria-hidden="true" class="dot">●</span> Inclusivity in Sport
-  </div>
-  <div>
-    <a href="#issue">Issue</a>
-    <a href="#policy">Policy</a>
-    <a href="#logic-model">Logic Model</a>
-    <a href="#delivery">Delivery</a>
-    <a href="#budget">Budget</a>
-    <a href="#evaluation">Evaluation</a>
-    <a href="#references">References</a>
-  </div>
-</nav>
+  <!-- Navigation -->
+  <nav aria-label="Primary" class="nav">
+    <div class="brand">
+      <span aria-hidden="true" class="dot">●</span> Inclusivity in Sport
+    </div>
+    <div>
+      <a href="implementations.html">Implementations</a>
+      <a href="costings.html">Costings</a>
+    </div>
+  </nav>
 
-<!-- Hero Section -->
-<section class="hero">
-  <div class="hero-card">
-    <span class="eyebrow">Project focus • Inclusivity</span>
-    <h1>Muslim Women Boxing Initiative – Breaking Barriers in Sport</h1>
-    <p class="lead">
-      Exploring how beliefs—particularly within Islam—shape participation in sport.
-      Identifying barriers and showcasing strategies that respect faith, modesty,
-      and community while increasing access and agency.
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-card">
+      <span class="eyebrow">Project focus • Inclusivity</span>
+      <h1>How religious beliefs affect sport participation — and how to make sport more inclusive</h1>
+      <p class="lead">
+        Exploring how beliefs—particularly within Islam—shape participation in sport.
+        Identifying barriers and showcasing strategies that respect faith, modesty,
+        and community while increasing access and agency.
+      </p>
+      <div aria-label="Quick links" class="grid grid-2" role="group">
+        <a href="implementations.html">View Implementations →</a>
+        <a href="costings.html">See Costings →</a>
+      </div>
+
+      <!-- Added separated links -->
+      <div aria-label="Additional links" class="grid grid-2" role="group" style="margin-top:2rem; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));">
+        <a href="Inclusion_and_Policy.html" style="background-color:#28A745;">Inclusion and Policy →</a>
+        <a href="Logic_Model_Table.html" style="background-color:#007BFF;">Logic Model Table →</a>
+        <a href="Monitoring_Evaluation_Framework.html" style="background-color:#6f42c1;">Monitoring & Evaluation Framework →</a>
+      </div>
+    </div>
+    <figure class="hero-media">
+      <img src="imagesboxing-group.jpg" alt="A group of Muslim women training in a boxing class, demonstrating inclusive sporting practice.">
+    </figure>
+  </section>
+
+  <!-- Main Content -->
+  <main id="main">
+    <section aria-labelledby="intro">
+      <h2 id="intro">Introduction &amp; Aims</h2>
+      <p>
+        This project explores how religious beliefs, particularly within Islam, influence participation in sports.
+        It aims to identify barriers and propose inclusive strategies that respect religious values while promoting
+        active engagement.
+      </p>
+    </section>
+
+    <section aria-labelledby="context">
+      <h2 id="context">Context</h2>
+      <ul>
+        <li>Modesty requirements (e.g., hijab, long sleeves)</li>
+        <li>Gender segregation in physical activities</li>
+        <li>Lack of representation (few Muslim female coaches)</li>
+        <li><strong>Example:</strong> <em>Muslim Women Boxing Initiative</em> – empowering Muslim women through culturally sensitive boxing programs</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="critical">
+      <h2 id="critical">Critical Theory and Sport</h2>
+      <p>
+        Critical theory helps examine power structures and cultural norms in sport. It promotes
+        <strong>agency</strong>—the ability to act independently and make choices—especially for marginalized groups.
+      </p>
+      <ul>
+        <li>Challenges dominant ideologies</li>
+        <li>Focuses on empowerment and cultural transformation</li>
+        <li>More agency-oriented than functionalism or conflict theory</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="agency">
+      <h2 id="agency">Agency</h2>
+      <p>Agency refers to the capacity of individuals to act independently. In sport, it means:</p>
+      <ul>
+        <li>Muslim women choosing to participate despite societal pressures</li>
+        <li>Creating inclusive spaces and programs</li>
+        <li>Having Muslim female coaches who advocate for their communities</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="tenets">
+      <h2 id="tenets">Major Tenets of Critical Theory in Sport</h2>
+      <ul>
+        <li>Power and inequality in sport</li>
+        <li>Cultural hegemony and marginalization</li>
+        <li>Resistance and social change</li>
+        <li>Sport as a space for identity and interaction</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="beyond">
+      <h2 id="beyond">Beyond Exploitation</h2>
+      <p>
+        Critical theory moves beyond seeing athletes as exploited labor. It views sport as a site for resistance,
+        expression, and transformation.
+      </p>
+    </section>
+
+    <section aria-labelledby="culture">
+      <h2 id="culture">Shaped by Interactions / Shaping Wider Culture</h2>
+      <p>
+        Sport is both influenced by and influences culture. Inclusive practices can reshape societal views on
+        Muslim women in sport.
+      </p>
+    </section>
+
+    <section aria-labelledby="change">
+      <h2 id="change">Potential for Change</h2>
+      <ul>
+        <li>Policy reforms (e.g., allowing religious attire)</li>
+        <li>Community initiatives (e.g., boxing programs)</li>
+        <li>Representation and leadership (e.g., Muslim female coaches)</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p class="note">
+      © <span id="year"></span> Inclusivity in Sport • Built by Hamzah Khan
+      • <a href="implementations.html">Implementations</a>
+      • <a href="costings.html">Costings</a>
     </p>
-  </div>
-  <figure class="hero-media">
-    <img src="imagesboxing-group.jpg" alt="Muslim women training in a boxing class, demonstrating inclusive sporting practice.">
-  </figure>
-</section>
+  </footer>
 
-<!-- Main Content -->
-<main id="main">
-
-<!-- Issue Statement -->
-<section aria-labelledby="issue">
-  <h2 id="issue">The Issue: Barriers to Muslim Women’s Participation in Sport</h2>
-  <p>
-    Muslim women in the UK face cultural and religious barriers to sport participation, including modesty requirements, gender segregation, and lack of representation.
-    <strong>Evidence:</strong> Only 18% of Muslim women meet recommended physical activity levels (Sport England, 2023).
-    This initiative aims to break these barriers through inclusive boxing programmes.
-  </p>
-</section>
-
-<!-- Policy & Governance -->
-<section aria-labelledby="policy">
-  <h2 id="policy">Policy and Governance Context</h2>
-  <table>
-    <thead>
-      <tr><th>Agency</th><th>Role</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>Sport England</td><td>Funding and inclusion guidance</td></tr>
-      <tr><td>Local Council</td><td>Venue access and community outreach</td></tr>
-      <tr><td>England Boxing</td><td>Coach accreditation and safeguarding</td></tr>
-    </tbody>
-  </table>
-  <p><strong>Policy levers:</strong> Equality Act 2010, Sport England’s <em>Uniting the Movement</em> strategy.</p>
-</section>
-
-<!-- Logic Model -->
-<section aria-labelledby="logic-model">
-  <h2 id="logic-model">Logic Model / Theory of Change</h2>
-  <table>
-    <thead>
-      <tr><th>Inputs</th><th>Activities</th><th>Outputs</th><th>Outcomes</th></tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>£3,000 funding</td>
-        <td>Hire female coach</td>
-        <td>12 weekly sessions</td>
-        <td>Increased confidence</td>
-      </tr>
-      <tr>
-        <td>Venue</td>
-        <td>Outreach via mosques</td>
-        <td>30 participants</td>
-        <td>Higher participation rates</td>
-      </tr>
-    </tbody>
-  </table>
-</section>
-
-<!-- Delivery Plan -->
-<section aria-labelledby="delivery">
-  <h2 id="delivery">Delivery Plan</h2>
-  <ul>
-    <li><strong>Target group:</strong> Muslim women aged 16–30 in Birmingham.</li>
-    <li><strong>Setting:</strong> Female-only boxing sessions in community gym.</li>
-    <li><strong>Partners:</strong> Local mosques, England Boxing, Sport England.</li>
-    <li><strong>Safeguarding:</strong> DBS checks, female coaches, modest attire policy.</li>
-    <li><strong>Risks:</strong> Low uptake → mitigated by community ambassadors.</li>
-  </ul>
-</section>
-
-<!-- Budget -->
-<section aria-labelledby="budget">
-  <h2 id="budget">Costed Budget</h2>
-  <table>
-    <thead>
-      <tr><th>Item</th><th>Cost</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>Venue hire (12 weeks)</td><td>£600</td></tr>
-      <tr><td>Coach fees</td><td>£1,200</td></tr>
-      <tr><td>Equipment</td><td>£500</td></tr>
-      <tr><td>Marketing</td><td>£200</td></tr>
-      <tr><td>Contingency</td><td>£500</td></tr>
-    </tbody>
-  </table>
-  <p><strong>Total:</strong> £3,000</p>
-</section>
-
-<!-- Monitoring & Evaluation -->
-<section aria-labelledby="evaluation">
-  <h2 id="evaluation">Monitoring & Evaluation Framework</h2>
-  <ul>
-    <li><strong>Indicators:</strong> Attendance, retention, satisfaction surveys.</li>
-    <li><strong>Methods:</strong> Logs, pre/post questionnaires, interviews.</li>
-    <li><strong>Feedback loop:</strong> Adjust programme based on participant feedback.</li>
-  </ul>
-</section>
-
-
-<!-- References -->
-<section aria-labelledby="references">
-  <h2 id="references">References</h2>
-  <p>
-    Sport England (2023) <em>Active Lives Adult Survey</em>. Available at: 
-    <a href="https://www.sportengland.org/research-and-data/data/active-lives" target="_blank" rel="noopener noreferrer">
-      https://www.sportengland.org/research-and-data/data/active-lives
-    </a> (Accessed: 10 December 2025).<br><br>
-
-    England Boxing (2024) <em>Safeguarding Policy</em>. Available at: 
-    <a href="https://www.englandboxing.org/clubs/safeguarding" target="_blank" rel="noopener noreferrer">
-      https://www.englandboxing.org/clubs/safeguarding
-    </a> (Accessed: 10 December 2025).
-  </p>
-</section>
-
-
+  <script>
+    // Dynamically set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
